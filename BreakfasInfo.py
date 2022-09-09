@@ -6,7 +6,7 @@
 
 # obter previsao do tempo
 import requests
-# Chave = 1e6cdd6e"
+
 previsao_tempo = "https://api.hgbrasil.com/weather?array_limit=2&fields=only_results,temp,woeid=449648,forecast,max,min,date&key=1e6cdd6e"
 requisicao1 = requests.get(previsao_tempo)
 print(requisicao1.json())
